@@ -68,13 +68,13 @@ Dans ce projet, le frontend joue aussi le rôle d’**oracle**.
 
 ## 🗂️ Architecture du projet
 
-Les technologies choisies sont :
-– Solidity pour les smart contracts (avec Foundry et Hardhat) ;
-– React pour l’IHM ;
-– Python avec FastApi et scikit-learn pour le calcul des points via un modèle de machine learning.
-
-Chaque partie a son répertoire.
-
+Les technologies choisies sont :  
+– Solidity pour les smart contracts (avec Foundry et Hardhat) ;  
+– React pour l’IHM ;  
+– Python avec FastApi et scikit-learn pour le calcul des points via un modèle de machine learning.  
+  
+Chaque partie a son répertoire.  
+  
 ```text
 padelrank-ai/
 │
