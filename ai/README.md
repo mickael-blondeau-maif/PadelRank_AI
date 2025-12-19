@@ -6,7 +6,7 @@ python train.py pour générer le joblib
 .\.venv\Scripts\uvicorn.exe ai.app:app --reload
 
 Ednpoints disponibles :  
-/ juste pour un petit bonjour
-/favicon.ico pour récupérer l'icône
-/health pour vérifier le statut
+/ juste pour un petit bonjour.  
+/favicon.ico pour récupérer l'icône.  
+/health pour vérifier le statut.  
 /points pour générer les points gagnés par le vainqueur
