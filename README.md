@@ -100,3 +100,6 @@ padelrank-ai/
 
 - **RainbowKit** – UI pour la connexion aux wallets  
   🔗 [rainbowkit.com](https://www.rainbowkit.com)
+
+## How to use
+TODO
