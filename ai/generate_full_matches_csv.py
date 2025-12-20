@@ -20,10 +20,25 @@ matches = []
 for winner, loser, score, level in itertools.product(winner_ranks, loser_ranks, score_diffs, tournament_levels):
     if winner == loser:
         continue  # pas de match contre soi-même
-    base_points = max(loser - winner, 1)
+    # écart de classement (positif = exploit)
+    rank_gap = winner - loser
+
+    # gain minimum même pour une victoire attendue
+    base_points = 5
+
+    # bonus si exploit (plus winner est mal classé, plus ça rapporte)
+    exploit_bonus = max(rank_gap, 0) * 2
+
+    # bonus domination (jamais négatif)
     score_bonus = max(score, 0)
+
+    # importance du tournoi
     multiplier = 1 + (level - 1) * 0.5
-    points_delta = round((base_points + score_bonus) * multiplier, 2)
+
+    points_delta = round(
+        (base_points + exploit_bonus + score_bonus) * multiplier,
+        2
+    )
     matches.append([winner, loser, score, level, points_delta])
 
 # Créer DataFrame et sauvegarder CSV
