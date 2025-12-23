@@ -102,4 +102,4 @@ padelrank-ai/
   🔗 [rainbowkit.com](https://www.rainbowkit.com)
 
 ## How to use
-TODO
+Voir README.md de chaque répertoire.
